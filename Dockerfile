@@ -1,6 +1,6 @@
 FROM python:3.11-slim
 
-# 安裝系統及 pypotrace 所需依賴
+# 這行很重要！！多加 pkg-config 跟 libagg-dev
 RUN apt-get update && \
     apt-get install -y potrace poppler-utils libgl1 pkg-config libagg-dev && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
