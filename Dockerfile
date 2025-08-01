@@ -1,6 +1,6 @@
 FROM python:3.11-slim
 
-# 這行很重要！！多加 pkg-config 跟 libagg-dev
+# 安裝所有必要系統套件
 RUN apt-get update && \
     apt-get install -y potrace poppler-utils libgl1 pkg-config libagg-dev && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
