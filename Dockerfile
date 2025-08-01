@@ -1,6 +1,6 @@
 FROM python:3.11-slim
 
-# 安裝必要的系統套件（包含 pyPotrace 依賴）
+# 安裝系統及 pypotrace 所需依賴
 RUN apt-get update && \
     apt-get install -y potrace poppler-utils libgl1 pkg-config libagg-dev && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
