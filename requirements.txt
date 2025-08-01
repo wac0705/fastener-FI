@@ -4,4 +4,4 @@ pdf2image
 opencv-python
 numpy
 pillow
-pyPotrace
+pypotrace
